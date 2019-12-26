@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # mobile3
 
 ```
@@ -29,3 +30,7 @@ npm run build
 # 预生产环境 - mobile3-release
 # 正式环境 - mobile3-prod-release
 ```
+=======
+# item-1.0
+a item
+>>>>>>> 7e233af01fd0d76e59f89f301480e98e53272db4
