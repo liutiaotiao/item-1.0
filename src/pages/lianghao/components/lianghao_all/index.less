@@ -1,0 +1,385 @@
+/* @charset "UTF-8"; */
+.lhao{
+	background: #F3F5F7;
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	left: 0;
+	top: 0
+}
+.lh_banner{
+	width: 750px;
+	height: 360px;
+	background:#f2f2f2;
+	background: url("./images/h5banner.png") no-repeat 0 0;
+  background-size: contain;
+}
+.lh_book{
+	width:710px;
+	height:110px;
+	background:rgba(255,255,255,1);
+	box-shadow:0px 6px 12px 0px rgba(0, 0, 0, 0.1);
+	border-radius:10px;
+	margin:0 auto;
+	z-index: 1;
+	margin-top: -40px;
+	padding-left: 25px;
+	padding-top:25px;
+	p{
+		font-size:24px;
+		font-family:PingFang SC;
+		font-weight:500;
+		color:rgba(102,102,102,1);
+		text-align: center;
+		line-height: 1.5;
+		span{
+			color:rgba(252,33,53,1);
+		}
+	}
+}
+
+.all{
+	padding:36px 30px 0;
+	.all-title{
+		font-size:32px;
+		font-family:PingFang SC;
+		font-weight:bold;
+		color:rgba(34,34,34,1);
+		span{
+			float:right;
+			font-size:24px;
+			font-family:PingFang SC;
+			font-weight:500;
+			color:rgba(51,51,51,1);
+		}
+	}
+	// 筛选
+	.all-checkbox{
+		height:94px;
+		background:rgba(255,255,255,1);
+		border-radius:10px;
+		line-height: 94px;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		margin-top: 20px;
+		position:relative;
+		.all-checkbox-item{
+			float: left;
+			font-size:26px;
+			font-family:PingFang SC;
+			font-weight:500;
+			color: #999;
+		}
+		.all-checkbox-select{
+			float: left;
+			width:160px;
+			height:52px;
+			border:2px solid rgba(238,238,238,1);
+			border-radius:26px;
+			line-height:52px;
+			font-size:24px;
+			font-family:PingFang SC;
+			font-weight:500;
+			color:rgba(51,51,51,1);
+			padding-left:20px;
+			margin-right:50px;
+			position:relative;
+			span{
+        width: 16px;
+        height: 9px;
+        position:absolute;
+        left: 125px;
+        top:19px;
+        background: url(./images/down.png) no-repeat 0 0;
+        background-size: contain;
+        transition: 0.2s all linear;
+        &.down{
+          background: url(./images/down.png) no-repeat 0 0;
+          background-size: contain;
+        }
+        &.up{
+          background: url(./images/up.png) no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+		}
+    .all-checkbox-option{
+      width:220px;
+			background:rgba(255,255,255,1);
+			box-shadow:0px 6px 12px 0px rgba(0, 0, 0, 0.1);
+			border-radius:8px;
+			position:absolute;
+			top: 90px;
+			left: 116px;
+			z-index:9;
+      .all-checkbox-option-item{
+        display: block;
+        height:80px;
+        border-bottom:1px solid #F5F5F5;
+        font-size:24px;
+				font-family:PingFang SC;
+				font-weight:500;
+				color:rgba(51,51,51,1);
+				line-height:80px;
+				padding-left:30px;
+        position:relative;
+        &:active{
+          color:rgba(253,184,0,1);
+          .item-icon{
+						width:21px;
+						height:16px;
+		        position:absolute;
+		        right: 30px;
+		        bottom:30px;
+		        background: url(./images/dui.png) no-repeat 0 0;
+		        background-size: contain;
+		        transition: 0.2s all linear;
+					}
+        }
+      }
+      .all-checkbox-option-itemall{
+				display: block;
+        height:80px;
+        border-bottom:1px solid #F5F5F5;
+        font-size:24px;
+				font-family:PingFang SC;
+				font-weight:500;
+				color:rgba(51,51,51,1);
+				line-height:80px;
+				padding-left:30px;
+			}
+    }
+
+
+
+
+
+		.all-checkbox-selectall{
+			float: left;
+			width:192px;
+			height:52px;
+			border:2px solid rgba(238,238,238,1);
+			border-radius:26px;
+			line-height:52px;
+			padding-left:20px;
+			font-size:24px;
+			font-family:PingFang SC;
+			font-weight:500;
+			color:rgba(51,51,51,1);
+			position:relative;
+			span{
+        width: 16px;
+        height: 9px;
+        position:absolute;
+        left: 155px;
+        top:19px;
+        background: url(./images/down.png) no-repeat 0 0;
+        background-size: contain;
+        transition: 0.2s all linear;
+        &.down{
+          background: url(./images/down.png) no-repeat 0 0;
+          background-size: contain;
+        }
+        &.up{
+          background: url(./images/up.png) no-repeat 0 0;
+          background-size: contain;
+        }
+      }
+		}
+		.all-checkbox-optionall{
+      width:220px;
+			background:rgba(255,255,255,1);
+			box-shadow:0px 6px 12px 0px rgba(0, 0, 0, 0.1);
+			border-radius:8px;
+			position:absolute;
+			top: 90px;
+			right: 0;
+			z-index:9;
+      .all-checkbox-optionall-item{
+        display: block;
+        height:80px;
+        border-bottom:1px solid #F5F5F5;
+        font-size:24px;
+				font-family:PingFang SC;
+				font-weight:500;
+				color:rgba(51,51,51,1);
+				line-height:80px;
+				padding-left:30px;
+				position:relative;
+        &:active{
+          color:rgba(253,184,0,1);
+          .item-icon{
+						width:21px;
+						height:16px;
+		        position:absolute;
+		        right: 30px;
+		        bottom:30px;
+		        background: url(./images/dui.png) no-repeat 0 0;
+		        background-size: contain;
+		        transition: 0.2s all linear;
+					}
+        }
+      }
+      .all-checkbox-optionall-itemall{
+				display: block;
+        height:80px;
+        border-bottom:1px solid #F5F5F5;
+        font-size:24px;
+				font-family:PingFang SC;
+				font-weight:500;
+				color:rgba(51,51,51,1);
+				line-height:80px;
+				padding-left:30px;
+			}
+    }
+	}
+
+
+	// 列表
+	.all-list{
+		overflow: hidden;
+		width: 720px;
+		.all-list-item{
+			width:216px;
+			height:120px;
+			background:rgba(255,255,255,1);
+			border-radius:4px;
+			box-sizing: border-box;
+			text-align: center;
+			padding-top:30px;
+			position:relative;
+			
+			float: left;
+			margin-right:20px;
+			margin-top: 20px;
+			.all-list-item-icon{
+				width:42px;
+				height:45px;
+				position:absolute;
+				left: 24px;
+				top: 18px;
+				background: url("./images/1.png") no-repeat 0 0;
+				background-size: contain;
+			}
+			.all-list-item-tel{
+				font-size:26px;
+				font-family:PingFang SC;
+				font-weight:500;
+				color:rgba(34,34,34,1);
+				line-height: 1;
+				padding-left:26px;
+			}
+			.all-list-item-price{
+				font-size:22px;
+				font-family:PingFang SC;
+				font-weight:500;
+				color:rgba(234,188,117,1);
+				padding-top:20px;
+			}
+		}
+
+	}
+	// 空态
+	.all-list-empty{
+		width: 100%;
+		height: 220px;
+		text-align: center;
+		margin-top: 40px;
+		.all-list-empty-title{
+			font-size:24px;
+			font-family:PingFang SC;
+			font-weight:500;
+			color:rgba(170,170,170,1);
+			line-height:36px;
+		}
+		.all-list-empty-line{
+			width:220px;
+			height:60px;
+			border:2px solid rgba(253,184,0,1);
+			border-radius:30px;
+			font-size:24px;
+			font-family:PingFang SC;
+			font-weight:500;
+			color:rgba(102,102,102,1);
+			position:relative;
+			padding-left:59px;
+			padding-top:18px;
+			margin:0 auto;
+			margin-top: 40px;
+			span{
+				width:48px;
+				height:48px;
+        position:absolute;
+        left: 30px;
+        top:6px;
+        background: url(./images/line.png) no-repeat 0 0;
+        background-size: contain;
+			}
+		}
+	}
+
+
+}
+
+
+// 购买说明
+.all_tipbg{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, .6);
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 199;
+  .all_close{
+	  width:60px;
+	  height: 60px;
+	  position: fixed;
+	  bottom: 26%;
+	  left: 345px;
+	  background: url("./images/close.png") no-repeat 0 0 ;
+	  background-size: cover;
+	}
+	.all_tip {
+	  width:540px;
+		height:632px;
+		background:rgba(255,255,255,1);
+		border-radius:20px;
+		position: absolute;
+    top: 20%;
+    left: 105px;
+		.all_tip-top{
+			width:540px;
+			height:120px;
+			opacity:0.15;
+			border-radius:20px 20px 0px 0px;
+			background: url("./images/desc.png") no-repeat 0 0 ;
+	    background-size: cover;
+	    opacity: 1;
+		}
+	}
+
+	.all_tip-title {
+	  font-size: 26px;
+	  color: #4e4d4b;
+	  text-align: center;
+	  position: relative;
+
+	}
+
+	.all_content{
+	  height:513px;
+	  overflow-y:auto;
+	  padding:35px 30px;
+	  .all_row{
+		  font-size:24px;
+			font-family:PingFang SC;
+			font-weight:500;
+			color:rgba(34,34,34,1);
+			line-height:38px;
+		}
+	}
+}

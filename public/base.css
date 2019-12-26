@@ -1,0 +1,21 @@
+html,
+body {
+  font: 12px Microsoft YaHei, Arial, Helvetica, sans-serif, SimSun;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+div,
+p,
+span,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}

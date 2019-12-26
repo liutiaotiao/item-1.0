@@ -1,0 +1,418 @@
+.audition-wrap{
+  height: 1000px;
+  width: 100%;
+}
+.audition-three{
+  width: 710px;
+  height: 274px;
+  background: url('../../images/haixuan-rank-three.png') no-repeat 0 0;
+  background-size: cover;
+  margin:0 auto;
+  position: relative;
+}
+.audition-ava-contain{
+  padding:111px 30px 0 30px;
+}
+.audition-ava_icon{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 56px;
+  left: 506px;
+}
+.audition-ava-list{
+  position: relative;
+  float: left;
+  width: 33.3%;
+  overflow: hidden;
+}
+.audition-ava-bg1{
+  width: 76px;
+  height: 87px;
+  background:#0b0b0b url('../../images/audition-1.png') no-repeat 0 0;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.audition-ava-bg2{
+  width: 63px;
+  height: 72px;
+  background:#0b0b0b url('../../images/audition-2.png') no-repeat 0 0;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  margin: 18px auto 0 auto;
+}
+.audition-ava-bg3{
+  width: 63px;
+  height: 72px;
+  background:#0b0b0b url('../../images/audition-3.png') no-repeat 0 0;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  margin: 18px auto 0 auto;
+}
+.audition-boxF,.audition-boxF1{
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.audition-boxF, .audition-boxS, .audition-boxT{
+  width: 55px;
+  height: 64px;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  // will-change: transform;
+}
+.audition-boxF1, .audition-boxS1, .audition-boxT1{
+  width: 68px;
+  height: 79px;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  // will-change: transform;
+}
+.audition-boxF,.audition-boxF1{
+  transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+}
+.audition-boxS,.audition-boxS1{
+  transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+}
+.audition-boxT,.audition-boxT1{
+  transform: rotate(-60deg);
+  background: no-repeat 50% center;
+  background-size: 125% auto;
+  -ms-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+  visibility: visible;
+  background-image: url('../../images/tujimoren.png');
+}
+.audition-ava-live{
+  width: 40px;
+  height: 18px;
+  position: absolute;
+  top: 76px;
+  left: 88px;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.audition-ava-live1{
+  width: 48px;
+  height: 23px;
+  background-image: url('../../images/audition-1-live.png');
+  top: 64px;
+  left: 84px;
+}
+.audition-ava-live2{
+  background-image: url('../../images/audition-2-live.png');
+}
+.audition-ava-live3{
+  background-image: url('../../images/audition-3-live.png');
+}
+.audition-ava-name{
+  text-align: center;
+  width: 100%;
+  padding-top: 13px;
+  font-weight:500;
+}
+.audition-ava-name1{
+  font-size:22px;
+  color: #CCAB6B;
+}
+.audition-ava-name2{
+  font-size:18px;
+  color: #B0B0B0;
+}
+.audition-ava-name3{
+  font-size:18px;
+  color: #E79C83;
+}
+
+.audition-contain-wrap{
+  margin-top: 34px;
+  // margin-bottom: 100px;
+  width: 750px;
+  background-image: url('../../images/box-top.png'), url('../../images/box-bottom.png');
+  background-position: top center, bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 59px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  &::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.audition-contain{
+  width: 710px;
+  margin: 0 auto;
+  min-height: 300px;
+  border-left:2px solid rgba(94,77,52,1);
+  border-right:2px solid rgba(94,77,52,1);
+}
+.audition-contain_title{
+  height: 45px;
+  line-height: 45px;;
+  font-size:24px;
+  color: #B0905F;
+  text-align: center;
+  >span{
+    font-weight: 900;
+    color:#FFCD81;
+  }
+}
+.audition-contain_line{
+  width:454px;
+  height:2px;
+  background: url('../../images/haixuan-line.png') no-repeat 0 0;
+  background-size: cover;
+  margin: 3px auto 30px auto;
+}
+.audition-contain-list-header{
+  width: 664px;
+  height: 70px;
+  background-color: #292219;
+  margin: 0 auto;
+  line-height: 70px;
+  padding-left: 38px;
+}
+.audition-list{
+  float: left;
+  font-size:20px;
+  font-weight:500;
+  color:rgba(146,124,97,1);
+  &:nth-child(2) {
+    margin-left: 140px;
+  }
+  &:nth-child(3) {
+    margin-left: 160px;
+  }
+}
+.audition-contain-list_ul{
+  padding:0 23px 0 24px;
+  box-sizing: border-box;
+}
+.audition-contain-li{
+  display: flex;
+  height: 120px;
+  align-content: center;
+  border-bottom: 1px solid #222222;
+  box-sizing: border-box;
+  position: relative;
+}
+.audition-num{
+  width: 116px;
+  height: 100%;
+  line-height: 120px;
+  text-align: center;
+  font-size:30px;
+  font-weight:bold;
+  color:rgba(255,205,129,1);
+}
+.audition-num-pic{
+  width: 61px;
+  height: 50px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 35px auto 0 auto;
+}
+.audition-num-pic0{
+  background-image: url('../../images/haixuan-num0.png');
+}
+.audition-num-pic1{
+  background-image: url('../../images/haixuan-num1.png');
+}
+.audition-num-pic2{
+  background-image: url('../../images/haixuan-num2.png');
+}
+.audition-contain-list-main{
+  margin-left: 30px;
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.audition-contain-ava{
+  width: 70px;
+  height: 85px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  margin-top: 15px;
+  position: relative;
+}
+.audition-contain-ava0{
+  background-image: url('../../images/haixuan-tu0.png');
+}
+.audition-contain-ava1{
+  background-image: url('../../images/haixuan-tu1.png');
+
+}
+.audition-contain-ava2{
+  background-image: url('../../images/haixuan-tu2.png');
+}
+.audition-contain-ava_default{
+  margin-top: 26px;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #BC965B;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
+}
+.audition-contain-ava_mg{
+  width: 66px;
+  height: 66px;
+  background: url('../../images/tujimoren.png') no-repeat 0 0;
+  background-size:cover;
+  position: absolute;
+  top: 18px;
+  left: 2px;
+  border-radius: 50%;
+}
+.audition-contain-small_mg{
+  top: 0px;
+  left:0px;
+}
+.audition-contain-live_mg{
+  width: 55px;
+  height: 25px;
+  background:url('../../images/haixuan-live.png') no-repeat 0 0;
+  background-size: cover;
+  position: absolute;
+  bottom: -10px;
+  left: 6px;
+}
+.audition-contain-list_p{
+  padding-left: 13px;
+}
+.audition-contain-list_p1{
+  margin-top: 28px;
+  height: 35px;
+  line-height: 35px;
+  font-size:26px;
+  font-weight:500;
+  color:rgba(255,205,129,1);
+}
+.audition-contain-list_p2{
+  height: 35px;
+  line-height: 35px;
+  font-size:24px;
+  font-weight:500;
+  color:rgba(176,144,95,1);
+}
+.audition-contain_three{
+  padding-top: 29px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+.audition-contain_three_ava{
+  position: relative;
+  width: 54px;
+  height: 63px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+.audition-contain_three_ava0{
+  background-image: url('../../images/haixuan-small-tu0.png');
+}
+.audition-contain_three_ava1{
+  left: -16px;
+  background-image: url('../../images/haixuan-small-tu1.png');
+}
+.audition-contain_three_ava2{
+  left: -32px;
+  background-image: url('../../images/haixuan-small-tu2.png');
+}
+.audition-contain_three_default{
+  width: 50px;
+  height: 50px;
+  background-image: url('../../images/tujimoren.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 11px;
+  left: 2px;
+  border-radius: 50%;
+}
+.audition-29{
+  margin:30px auto 0;
+  width: 667px;
+  height: 107px;
+  background: url('../../images/haixuan-29.png') no-repeat 0 0;
+  background-size: cover;
+}
+.audition-29_p{
+  text-align: center;
+  width: 545px;
+  margin: 0 auto;
+  padding-top: 26px;
+  color: #C7A065;
+  font-size: 24px;
+  line-height: 32px;
+  &::before{
+    content: '';
+    display: table;
+  }
+  >span{
+    color: #FFE6BF;
+    font-size: 900;
+  }
+}
+.audition-pager{
+  height: 49px;
+  text-align: center;
+  margin: 30px auto 0;
+  display: table;
+  vertical-align: middle;
+}
+.audition-pager-p{
+  float: left;
+  width: 120px;
+  text-align: center;
+  height: 49px;
+  line-height: 49px;
+  box-sizing: border-box;
+  border: 1px solid #5E4D34;
+  color: #8D775D;
+  touch-action: none;
+  &:nth-child(2) {
+    border: 0;
+    font-size:28px;
+  }
+}
+.audition-pager_active{
+  color: #FFCD81;
+  border-color: #FFCD81
+}
+.audition-contain-no-data{
+  color: #f7ce8c;
+  height: 100px;
+  line-height: 100px;
+  border:1px solid #28221a;
+  width: 664px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+ 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+      name="viewport"
+    />
+    <meta name="format-detection" content="telephone=yes" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" />
+    <title>
+      <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <script>
+      window.PAGE_PATH = "<%= htmlWebpackPlugin.options.path %>";
+    </script>
+  </head>
+
+  <body>
+    <% if(htmlWebpackPlugin.options.app_env==='prod') { %>
+    <div id="app"></div>
+    <% }else{ %>
+    <style type="text/css">
+      ._refresh {
+        position: fixed;
+        right: 0;
+        bottom: 100px;
+        z-index: 999999;
+        color: #fff;
+        border: 1px solid #eee;
+        width: 50px;
+        height: 50px;
+        background: url("./refresh.png") no-repeat 0 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-size: 30px 30px;
+        background-position: center;
+        border-radius: 5px;
+      }
+    </style>
+    <script type="text/javascript">
+      window.VOID_RISK = true;
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.staticfile.org/vConsole/3.3.4/vconsole.min.js"
+    ></script>
+    <script type="text/javascript">
+      window.onload = () => {
+        // new VConsole()
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+      eruda.init();
+    </script>
+    <div class="_refresh" onclick="location.reload()"></div>
+    <div id="app"></div>
+    <% } %>
+  </body>
+</html>

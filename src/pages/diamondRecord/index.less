@@ -1,0 +1,137 @@
+.diamond_record_page {
+  width: 100%;
+  position: relative;
+  .head_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+  }
+  .head {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .head_section {
+      width: 190px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &.active {
+        border-bottom: 6px solid #FFC600;
+      }
+    }
+    .txt1 {
+      font-size: 28px;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: rgba(153, 153, 153, 1);
+      padding-bottom: 10px;
+    }
+    .txt2 {
+      display: none;
+      font-size: 48px;
+      font-family: Bebas Neue;
+      font-weight: bold;
+      color: rgba(253, 184, 0, 1);
+    }
+  }
+  .tab_wrap {
+    width: 100%;
+    overflow-x: scroll;
+    border-top: 20px solid #f4f4f4;
+  }
+  .tab_list {
+    height: 100px;
+    width: 1150px;
+    line-height: 100px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .tab_item {
+      height: 100px;
+      display: inline-block;
+      padding: 0px 30px;
+      font-size: 32px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      color: rgba(170, 170, 170, 1);
+      &.active {
+        font-size: 36px;
+        font-weight: bold;
+        color: rgba(34, 34, 34, 1);
+      }
+    }
+  }
+
+  .content {
+    margin-top: 340px;
+    &.content-recharge {
+      margin-top: 220px;
+    }
+  }
+
+  .content-list {
+    width: 100%;
+    padding: 0px 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .content-tip {
+    margin-top: 82px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(176, 176, 176, 1);
+    text-align: center;
+  }
+
+  .content-tip2 {
+    margin-top: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(176, 176, 176, 1);
+    text-align: center;
+    margin-bottom: 250px;
+  }
+
+  .empty {
+    margin: 10px auto;
+    width: 295px;
+    height: 210px;
+    background: url('./images/empty.png') no-repeat 0 0;
+    background-size: contain;
+  }
+
+  .coin-card_header-num-wrap {
+    margin-top: 30px;
+    position: relative;
+  }
+  .coin-card_header-num {
+    display: inline-block;
+    max-width: 400px;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgba(34, 34, 34, 1);
+    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .content-more-tip {
+    height: 30px;
+    font-size: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px auto;
+    font-weight: bold;
+    color: #b0b0b0;
+  }
+}

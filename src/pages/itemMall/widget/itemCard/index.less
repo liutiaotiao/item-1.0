@@ -1,0 +1,66 @@
+.w_itemmall-itemcard {
+  width: 206px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .w_itemmall-itemcard-wrapper {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(238, 238, 238, 1);
+    border-radius: 10px;
+    width: 206px;
+    height: 206px;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 180px;
+    }
+    .w_itemmall-itemcard-discont {
+      background-image: url("./images/discount-label.png");
+      background-size: 100% 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 88px;
+      height: 44px;
+      text-align: center;
+      span {
+        line-height: 44px;
+        font-size: 26px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 1);
+      }
+    }
+    .w_itemmall-itemcard-limit {
+      background-color: red;
+      font-size: 26px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+      position: absolute;
+      padding: 6px 32px;
+      right: 24px;
+      bottom: 24px;
+      transform: translate(50%, 50%) rotate(-45deg);
+    }
+  }
+
+  .w_itemmall-itemcard-name {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+  }
+
+  .w_itemmall-itemcard-worth {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(247, 190, 0, 1);
+    margin-top: 13px;
+    margin-bottom: 40px;
+  }
+}

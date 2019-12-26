@@ -1,0 +1,177 @@
+.p_itemmall-pay {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  .lable {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 67px;
+    text-align: center;
+    background: rgba(255, 251, 235, 1);
+    font-size: 24px;
+    font-weight: 500;
+    z-index: 9;
+    color: rgba(102, 102, 102, 1);
+    overflow: hidden;
+  }
+  .p_itemmall-pay-basic,
+  .p_itemmall-pay-btngroup,
+  .p_itemmall-pay-info {
+    background: rgba(255, 255, 255, 1);
+  }
+  .p_itemmall-pay-basic {
+    min-height: 156px;
+    .p_itemmall-pay-img-swiper {
+      position: relative;
+      .p_itemmall-pay-basic-img {
+        height: 750px;
+        border-bottom: solid 1px #f3f3f3;
+        position: relative;
+        img {
+          object-fit: contain;
+          width: 90%;
+          height: 90%;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+        }
+      }
+      .p_itemmall-pay-index {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        background: rgba(239, 239, 239, 1);
+        border-radius: 18px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 24px;
+        font-weight: 500;
+        color: rgba(102, 102, 102, 1);
+        padding: 0 16px;
+      }
+    }
+    .p_itemmall-pay-basic-info {
+      padding: 30px;
+      .p_itemmall-pay-main-info {
+        .p_itemmall-pay-basic-goal {
+          font-size: 24px;
+          line-height: 34px;
+          font-size: 500;
+          background-image: url("./images/slogan.png");
+          color: rgba(114, 61, 1, 1);
+          background-size: 100% 100%;
+          display: inline-block;
+          padding: 0 8px;
+        }
+        .p_itemmall-pay-basic-name {
+          margin-left: 13px;
+          font-size: 32px;
+          font-weight: bold;
+          color: rgba(51, 51, 51, 1);
+          vertical-align: top;
+        }
+      }
+      .p_itemmall-pay-basic-warm {
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 500;
+        color: rgba(153, 153, 153, 1);
+      }
+    }
+  }
+
+  .p_itemmall-pay-btngroup {
+    margin-top: 12px;
+    padding: 30px 0 50px 30px;
+    .p_itemmall-pay-title {
+      padding: 8px 0 22px;
+      font-size: 30px;
+      font-weight: 500;
+      color: rgba(51, 51, 51, 1);
+    }
+
+    .p-itemmall-pay-btn {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    .p_itemmall-pay-input-wrapper {
+      margin-top: 9px;
+      .p_itemmall-pay-input,
+      input[type="text"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        -webkit-tap-highlight-color: transparent;
+        width: 407px;
+        height: 80px;
+        background: rgba(255, 255, 255, 1);
+        border: 2px solid rgba(233, 233, 233, 1);
+        border-radius: 10px;
+        font-size: 30px;
+        font-weight: 500;
+        color: rgba(153, 153, 153, 1);
+        text-align: center;
+      }
+      .p_itemmall-pay-input-word {
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: 40px;
+        color: rgba(51, 51, 51, 1);
+      }
+    }
+  }
+
+  .p_itemmall-pay-info {
+    background-color: #ffff;
+    padding: 30px;
+    margin-top: 21px;
+    margin-bottom: 100px;
+    .p_itemmall-pay-info-title {
+      font-size: 32px;
+      font-weight: 500;
+      color: rgba(34, 34, 34, 1);
+      margin-bottom: 28px;
+    }
+
+    .p_itemmall-pay-info-bg {
+      width: 100%;
+      border: 2px solid rgba(238, 238, 238, 1);
+      border-radius: 8px;
+    }
+
+    .p_itemmall-pay-info-dp {
+      margin: 40px 16px;
+      font-size: 28px;
+      font-weight: 500;
+      color: #999999;
+      line-height: 42px;
+    }
+  }
+
+  .p_itemmall-pay-buy-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    background: linear-gradient(
+      210deg,
+      rgba(255, 220, 16, 1) 0%,
+      rgba(255, 204, 0, 1) 100%
+    );
+    text-align: center;
+    p {
+      font-size: 32px;
+      font-weight: bold;
+      color: rgba(51, 51, 51, 1);
+      line-height: 100px;
+    }
+  }
+}

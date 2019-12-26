@@ -1,0 +1,308 @@
+
+.app_mg{
+  padding-bottom: 100px;
+}
+.grand-ceremonynd-wrap{
+  background-color: #000;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom:100px;
+  box-sizing: border-box;
+  .grand-ceremonynd-bg{
+    width: 750px;
+    // height: 820px;
+    height: 780px;
+    background: url('./images/start-bg.png') no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+    margin:0 auto;
+  }
+  .grand-rich{
+    width: 89px;
+    height: 89px;
+    background: url('./images/fuhao.png') no-repeat 0 0;
+    // background: url('./images/fuhao.webp') no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    right: 15px;
+    top: 680px;
+    z-index:2;
+    animation: moveFu 3s 0s infinite;
+  }
+  .grand-ceremonynd-date{
+    position: absolute;
+    top: 716px;
+    left: 0;
+    width: 750px;
+    text-align: center;
+    color:#BA9359;
+    font-weight:bold;
+    font-size: 24px;
+  }
+}
+.grand-nav-wrap{
+  position: relative;
+  width: 744px;
+  height: 86px;
+  background: url('./images/nav-wrap.png') no-repeat 0 0;
+  background-size: cover;
+  margin: 20px auto 0 auto;
+  &::before{
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: url('./images/nianpiao-y.gif') no-repeat 0 0;
+    // width: 210px;
+    // height: 80px;
+    // background: url('./images/nianpiao-b.gif') no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    top: -58px;
+    left: 120px;
+    z-index:3;
+  }
+  &::after{
+    content: '';
+    width: 210px;
+    height: 80px;
+    // width: 154px;
+    // height: 59px;
+    background: url('./images/car-bai.gif') no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    top: -58px;
+    left: 424px;
+    z-index:3;
+  }
+  .grand-nav-opacity{
+    width: 172px;
+    height: 80px;
+    float: left;
+    margin-left: 2px;
+    z-index:1;
+    &:first-child{
+      margin-left: 26px;
+    }
+  }
+  .grand-nav{
+    width: 202px;
+    height: 96px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    position: absolute;
+    z-index:2;
+  }
+  .grand-nav0{
+    background-image: url('./images/act-0.png');
+    left: 16px;
+    top: -5px;
+  }
+  .grand-nav1{
+    background-image: url('./images/act-1.png');
+    position: absolute;
+    left: 182px;
+    top: -5px;
+  }
+  .grand-nav2{
+    background-image: url('./images/act-2.png');
+    position: absolute;
+    left: 354px;
+    top: -5px;
+  }
+  .grand-nav3{
+    background-image: url('./images/act-3.png');
+    position: absolute;
+    left: 527px;
+    top: -5px;
+  }
+}
+
+// rule
+.grand_nav-wrap{
+  width: 705px;
+  height: 71px;
+  background: url('./images/aaimg-rules/rule_default-nav.png') no-repeat 0 0;
+  background-size: contain;
+  margin: 20px auto 0;
+  position: relative;
+}
+.grand_nav-wrap_placeholder{
+  width: 705px;
+  height: 71px;
+  margin: 20px auto 0;
+}
+.grand_nav-fixed{
+  margin-top: 0;
+  position: fixed;
+  top: 0px;
+  // left: 23px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index:2;
+}
+.grand_nav{
+  height: 71px;
+  background: no-repeat 0 0;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+.grand_nav_default0{
+  width: 140px;
+}
+.grand_nav_default1{
+  width: 142px;
+  left: 115px;
+}
+.grand_nav_default2{
+  width: 142px;
+  left: 233px;
+}
+.grand_nav_default3{
+  width: 142px;
+  left: 352px;
+}
+.grand_nav_default4{
+  width: 142px;
+  left: 469px;
+}
+.grand_nav_default5{
+  width: 122px;
+  left: 587px;
+}
+.grand_nav0{
+  width: 140px;
+  background-image: url('./images/aaimg-rules/rule_nav0.png');
+  z-index:5;
+}
+.grand_nav1{
+  width: 142px;
+  background-image: url('./images/aaimg-rules/rule_nav1.png');
+  left: 115px;
+  z-index:4;
+}
+.grand_nav2{
+  width: 142px;
+  background-image: url('./images/aaimg-rules/rule_nav2.png');
+  left: 233px;
+  z-index:3;
+}
+.grand_nav3{
+  width: 142px;
+  background-image: url('./images/aaimg-rules/rule_nav3.png');
+  left: 352px;
+  z-index:2;
+}
+.grand_nav4{
+  width: 142px;
+  background-image: url('./images/aaimg-rules/rule_nav4.png');
+  left: 469px;
+  z-index:1;
+}
+.grand_nav5{
+  width: 122px;
+  background-image: url('./images/aaimg-rules/rule_nav5.png');
+  left: 587px;
+}
+.rules-wrap{
+  width: 750px;
+  text-align: center;
+  margin:0 auto;
+}
+.g_rules{
+  width: 750px;
+  display: inline-block;
+  background:no-repeat 0 0;
+  background-size: cover;
+  margin:20px auto 30px;
+}
+.rules_annualGift{
+  position: relative;
+  height: 1193px;
+  background-image: url('./images/aaimg-rules/rules-nianduliwu.png');
+}
+.rules_receive{
+  width: 150px;
+  height: 50px;
+  background: no-repeat 0 0;
+  background-size: cover;
+  position: absolute;
+  top: 505px;
+  left: 137px;
+}
+.rules_receive-p{
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  top: 608px;
+  left: 128px;
+}
+.rules_receive_btn{
+  background-image: url('./images/aaimg-rules/act_end.png');
+}
+.rules_receive_have{
+  background-image: url('./images/aaimg-rules/yilingqu.png');
+}
+.rules_audition{
+  height: 793px;
+  background-image: url('./images/aaimg-rules/rules-haixuan.png');
+}
+.rules_screens{
+  width: 739px;
+  height: 1367px;
+  background-image: url('./images/aaimg-rules/rules-kawei.png');
+}
+.rules_integral{
+  height: 2056px;
+  background-image: url('./images/aaimg-rules/rules-jifen.png');
+}
+.rules_resurrection{
+  width:712px;
+  height: 832px;
+  background-image: url('./images/aaimg-rules/rules-fuhuo.png');
+}
+.rules_final{
+  height: 2655px;
+  background-image: url('./images/aaimg-rules/rules-juesai.png');
+}
+
+@keyframes moveFu{
+    0%, 65%{ 
+      -webkit-transform:rotate(0deg);
+      transform:rotate(0deg);
+    }
+    70% {  
+      -webkit-transform:rotate(6deg);
+      transform:rotate(6deg);
+    }
+    75% {  
+      -webkit-transform:rotate(-6deg);
+      transform:rotate(-6deg);
+    }
+    80% {  
+      -webkit-transform:rotate(6deg);
+      transform:rotate(6deg);
+    }
+    85% {  
+      -webkit-transform:rotate(-6deg);
+      transform:rotate(-6deg);
+    }
+    90% {  
+      -webkit-transform:rotate(6deg);
+      transform:rotate(6deg);
+    }
+    95% {  
+      -webkit-transform:rotate(-6deg);
+      transform:rotate(-6deg);
+    }
+    100% {  
+      -webkit-transform:rotate(0deg);
+      transform:rotate(0deg);
+    }
+}
+
+
+
+

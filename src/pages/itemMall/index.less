@@ -1,0 +1,243 @@
+.p_itemmall {
+  background-color: #f4f4f4;
+  text-align: center;
+  .p_itemmall-slideshow {
+    height: 320px;
+    img {
+      width: 100%;
+      height: 320px;
+    }
+  }
+
+  .p_itemmall-wrapper {
+    background-color: #f4f4f4;
+    padding: 20px 20px 78px 20px;
+    .p_itemmall-daily,
+    .p_itemmall-sale,
+    .p_itemmall-item,
+    .p_itemmall-ride {
+      background: rgba(255, 255, 255, 1);
+      border-radius: 20px;
+    }
+
+    .p_itemmall-sale,
+    .p_itemmall-item,
+    .p_itemmall-ride {
+      padding: 36px 26px 30px;
+    }
+    // 每日特惠
+    .p_itemmall-daily {
+      .image-box {
+        height: 444px;
+        position: relative;
+        .odd-lable {
+          position: absolute;
+          font-size: 24px;
+          font-weight: 400;
+          color: rgba(166, 105, 0, 1);
+          line-height: 40px;
+          top: 31px;
+          left: 31px;
+          padding: 0 12px;
+          background-image: url("./images/odd-label.png");
+          background-size: 100% 100%;
+        }
+        img {
+          position: absolute;
+          object-fit: contain;
+          width: 70%;
+          height: 70%;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+      .daily-lable {
+        height: 72px;
+        background-image: url("./images/word-bg.png");
+        text-align: center;
+        position: relative;
+        background-size: 100% 100%;
+        font-size: 28px;
+        font-weight: 500;
+        color: rgba(166, 105, 0, 1);
+        padding-top: 31px;
+        .word-lable {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 24px;
+          font-size: 35px;
+          font-weight: bold;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+      .operate-wrapper {
+        padding: 38px 19px 38px 29px;
+        display: flex;
+        justify-content: space-between;
+        .info-box {
+          text-align: left;
+          .money-text {
+            font-size: 36px;
+            font-weight: bold;
+            color: rgba(253, 184, 0, 1);
+            span {
+              margin-left: 28px;
+              margin-top: auto;
+              font-size: 24px;
+              font-weight: 500;
+              text-decoration: line-through;
+              color: rgba(204, 204, 204, 1);
+            }
+          }
+          .dp-text {
+            margin-top: 16px;
+            font-size: 28px;
+            font-weight: 500;
+            color: rgba(51, 51, 51, 1);
+          }
+        }
+        .btn {
+          width: 240px;
+          height: 80px;
+          font-size: 30px;
+          font-weight: bold;
+          background-image: url("./images/daily-btn.png");
+          background-size: 100% 100%;
+          color: rgba(34, 34, 34, 1);
+          line-height: 80px;
+          text-align: center;
+        }
+      }
+    }
+
+    // 限时折扣
+    .p_itemmall-sale {
+      margin-top: 20px;
+      .p_itemmall-sale-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        .p_itemmall-sale-title-icon {
+          width: 133px;
+          height: 33px;
+          background-size: contain;
+          background-image: url("images/sale-title.png");
+        }
+        .p_itemmall-sale-title-time {
+          font-size: 28px;
+          font-weight: 500;
+          color: rgba(102, 102, 102, 1);
+          span {
+            font-size: 28px;
+            font-weight: 500;
+            border-radius: 5px;
+            padding: 2px 7px;
+            color: rgba(255, 255, 255, 1);
+            margin: 0 10px;
+            background: rgba(51, 51, 51, 1);
+          }
+        }
+      }
+      .p_itemmall-notice {
+        background: rgba(255, 251, 235, 1);
+        margin: 0 0 20px;
+        padding: 20px;
+        overflow: hidden;
+        height: 81px;
+        .p_itemmall-notice-icon {
+          float: left;
+          width: 39px;
+          height: 37px;
+          margin-left: 22px;
+          background-image: url("images/notice-icon.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .p_itemmall-notice-icon-wrapper {
+          .p_itemmall-notice-text {
+            margin-left: 12px;
+            line-height: 40px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 24px;
+            font-weight: 500;
+            color: rgba(102, 102, 102, 1);
+            span {
+              color: #f7be00;
+            }
+          }
+        }
+      }
+      .p_itemmall-sale-body {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .p_itemmall-sale-warm {
+        font-size: 26px;
+        font-weight: 500;
+        color: rgba(153, 153, 153, 1);
+        text-align: center;
+      }
+    }
+
+    // 道具商城
+    .p_itemmall-item {
+      background-color: #ffff;
+      margin-top: 10px;
+      .p_itemmall-item-title {
+        text-align: left;
+        font-size: 36px;
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+        margin-bottom: 30px;
+      }
+      .p_itemmall-item-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .p_item-struct-box {
+          display: inline-block;
+          width: 216px;
+          height: 216px;
+        }
+      }
+    }
+
+    // 坐骑商城
+    .p_itemmall-ride {
+      margin-top: 20px;
+      background-color: #ffff;
+      .p_itemmall-ride-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: rgba(51, 51, 51, 1);
+        margin-bottom: 30px;
+        text-align: left;
+        span {
+          float: right;
+          font-size: 26px;
+          font-weight: 500;
+          color: rgba(153, 153, 153, 1);
+        }
+      }
+
+      .p_itemmall-ride-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .p_item-struct-box {
+          display: inline-block;
+          width: 216px;
+          height: 216px;
+        }
+      }
+    }
+  }
+}
